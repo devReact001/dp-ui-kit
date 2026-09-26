@@ -1,0 +1,22 @@
+import React from 'react';
+import { cn } from '../../utils/cn';
+import { focusRing } from '../../tokens';
+import type { BaseProps } from '../../types';
+
+export interface {{name}}Props extends BaseProps {
+  children?: React.ReactNode;
+}
+
+/**
+ * {{name}} — generated with `npm run generate`.
+ * Replace this with the real implementation. Keep it wired to the
+ * shared tokens (colors, spacing, radii, focus ring) so it stays
+ * consistent with the rest of the library as it scales.
+ */
+export const {{name}}: React.FC<{{name}}Props> = ({ children, className, ...rest }) => (
+  <div className={cn('rounded-md border border-gray-200 p-4', focusRing, className)} {...rest}>
+    {children}
+  </div>
+);
+
+{{name}}.displayName = '{{name}}';
